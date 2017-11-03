@@ -26,7 +26,7 @@ public class Speechkit {
         {
             byte[] inputBytes = Files.readAllBytes(FILE_PATH);
             //text_to_speech("расходы на образование в ярославской области в 2016 году",null, "ru-RU",true,false,null);
-            ArrayList<String> outputText = null;
+            ArrayList<String> outputText = new ArrayList<String>();
             outputText = speech_to_text(inputBytes);
             for (String a: outputText
                  ) {
